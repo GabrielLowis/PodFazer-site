@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { User, Settings, Menu, X } from 'lucide-react';
+import Logo from "@/assets/Logo.png";
+import placa from "@/assets/placa.png";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,35 +17,35 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <img 
-            src="/imagens-uploads/logo.png" 
-            alt="Logo" 
-            className="h-20 w-20 sm:h-24 sm:w-24 lg:h-32 lg:w-32 object-contain"
+            src={Logo}
+            alt="Logo"
+            className="h-20 w-20 sm:h-24 sm:w-24 lg:h-20 lg:w-20 object-contain"
           />
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-16 xl:-ml-48">
+        <nav className="hidden lg:flex items-center space-x-8 xl:space-x-16">
           <a 
             href="#sobre" 
-            className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-lg xl:text-xl"
+            className="text-[#FBCC01] hover:text-cyan-300 transition-colors font-puff link-header font-medium text-lg xl:text-xl"
           >
             Sobre nós
           </a>
           <a 
             href="#propostas" 
-            className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-lg xl:text-xl"
+            className="text-[#FBCC01] hover:text-cyan-300 transition-colors font-puff link-header font-medium text-lg xl:text-xl"
           >
             Propostas
           </a>
           <a 
             href="#atividades" 
-            className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-lg xl:text-xl"
+            className="text-[#FBCC01] hover:text-cyan-300 transition-colors font-puff link-header font-medium text-lg xl:text-xl"
           >
             Atividades
           </a>
           <a 
             href="#contato" 
-            className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-lg xl:text-xl"
+            className="text-[#FBCC01] hover:text-cyan-300 transition-colors font-puff link-header font-medium text-lg xl:text-xl"
           >
             Contato
           </a>
@@ -50,10 +53,10 @@ const Header = () => {
 
         {/* Desktop Icons */}
         <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
-          <button className="text-white hover:text-cyan-300 transition-colors">
+          <button className="text-[#00ffff] hover:text-cyan-300 transition-colors">
             <User className="h-8 w-8 lg:h-10 lg:w-10" />
           </button>
-          <button className="text-white hover:text-cyan-300 transition-colors">
+          <button className="text-[#00ffff] hover:text-cyan-300 transition-colors">
             <Settings className="h-8 w-8 lg:h-10 lg:w-10" />
           </button>
         </div>
@@ -92,28 +95,28 @@ const Header = () => {
             <nav className="flex flex-col px-6 py-8 space-y-6">
               <a 
                 href="#sobre" 
-                className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-xl py-2 border-b border-white/10"
+                className="text-white hover:text-cyan-300 transition-colors font-puff link-header font-medium text-xl py-2 border-b border-white/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sobre nós
               </a>
               <a 
                 href="#propostas" 
-                className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-xl py-2 border-b border-white/10"
+                className="text-white hover:text-cyan-300 transition-colors font-puff link-header font-medium text-xl py-2 border-b border-white/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Propostas
               </a>
               <a 
                 href="#atividades" 
-                className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-xl py-2 border-b border-white/10"
+                className="text-white hover:text-cyan-300 transition-colors font-puff link-header font-medium text-xl py-2 border-b border-white/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Atividades
               </a>
               <a 
                 href="#contato" 
-                className="text-white hover:text-cyan-300 transition-colors font-poppins font-medium text-xl py-2 border-b border-white/10"
+                className="text-white hover:text-cyan-300 transition-colors font-puff link-header font-medium text-xl py-2 border-b border-white/10"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contato
