@@ -5,7 +5,7 @@ const StartLearning = () => {
   return (
     <div className="min-h-screen py-12 px-8 sm:px-6 md:px-10 lg:px-20 xl:px-40 bg-white">
       <div className="w-full flex justify-center mb-12 text-center">
-        <h2 className="text-4xl md:text-5xl xl:text-6xl text-black font-bold leading-tight">
+        <h2 className="text-4xl md:text-5xl xl:text-6xl text-[#45a7a7] font-puff font-bold leading-tight">
           Comece a aprender!
         </h2>
       </div>
@@ -34,17 +34,17 @@ const StartLearning = () => {
                 </div>
               </div>
 
-              <div className="h-full bg-[#30B8B8] flex flex-col items-center text-center px-4 pt-18 pb-6">
+              <div className="h-full bg-[#45a7a7] flex flex-col items-center text-center px-4 pt-18 pb-4">
                 <h3 className="text-[#ffbb00] mt-2 font-bold mb-1 leading-tight text-lg sm:text-xl md:text-2xl">
                   {item.title}
                 </h3>
                 <p className="w-full font-poppins text-justify mt-2 text-sm sm:text-10 text-white leading-snug">
                   {item.text}
                 </p>
-                <div className="bg-amber-400 font-poppins font-bold text-xl w-full h-10 mt-2 rounded-b-2xl px-10 flex justify-between items-center">
-                  <p>6-10 Anos</p>
+                <div className="bg-amber-400 font-puff text-[#393939] font-bold text-xl w-full h-10 mt-2 rounded-b-2xl px-9 flex justify-between items-center">
+                  <p>{item.years}</p>
                   <span>|</span>
-                  <p>Básico</p>
+                  <p>{item.level}</p>
                 </div>
               </div>
             </div>
